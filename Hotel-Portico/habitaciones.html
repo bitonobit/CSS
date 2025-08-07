@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Pórtico</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9ef08a2705.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <a href="index.html"><img src="./img/logo.png" alt=""></a>
+    <h1>Hotel Pórtico</h1>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="habitaciones.html" class="active">Habitaciones</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <div class="row">
+    <div class="col-izq">
+      <div class="card">
+        <h2>Cómodas y con hermosas vistas</h2>
+        <h5>Simples y dobles</h5>
+        <img src="./img/habitaciones.jpg" alt="Habitaciones simples" class="img">
+        <p>El hotel cuenta con 35 habitaciones, todas equipadas con todas las comodidades modernas que los huéspedes pueden esperar de un hotel de lujo. Las habitaciones son amplias y luminosas, con una decoración elegante y acogedora. </p>
+      </div>
+      <div class="card">
+        <h2>Privadas con piscina</h2>
+        <h5>Suites</h5>
+        <img src="./img/hotel2.jpg" alt="Suites privadas" class="img">
+        <p>El hotel cuenta con 10 suites, equipadas con todas las comodidades modernas que los huéspedes pueden esperar de un hotel de lujo. Las suites son amplias y luminosas, con una decoración elegante y acogedora. Todas las suites tienen vistas al mar y piscina privada.</p>
+      </div>
+      <div class="card">
+        <h2>Vistas al mar</h2>
+        <h5>Suites</h5>
+        <img src="./img/vistas.jpg" alt="Suites privadas" class="img">
+        <p>Tenerife, la isla más grande del archipiélago de las Islas Canarias, es conocida por sus hermosas playas. Hay playas para todos los gustos, desde playas de arena blanca y aguas cristalinas hasta playas de arena negra volcánica. la Playa de la Tejita es una playa virgen ubicada en el sur de Tenerife. Esta playa de arena dorada se encuentra en el Parque Natural de Montaña Roja y es ideal para aquellos que buscan un lugar tranquilo para relajarse y disfrutar del sol y el mar.</p> 
+        <p> Las vistas al mar desde las habitaciones son un privilegio que no cuesta más en nuestro Hotel, pues todas las habitaciones tienen amplias y hermosas vistas al mar.</p>
+      </div>
+    </div>
+    <div class="col-der">
+      <div class="card">
+        <h2>Limpieza</h2>
+        <img src="./img/limpieza.jpg" alt="Playa de la tejita" class="img">
+        <p>La limpieza diaria y la comodidad de nuestros huéspedes es una de nuestras principales preocupaciones.</p>
+      </div>
+      <div class="card">
+        <h2>Servicio de habitaciones</h2>
+        <img src="./img/desayunos.jpg" alt="Playa de la tejita" class="img">
+        <p>El servicio de habitaciones está disponible en cualquier momento de su estancia</p>
+      </div>
+      <div class="card">
+        <h2>Cóctel de bienvenida</h2>
+        <img src="./img/bienvenida.jpg" alt="Playa de la tejita" class="img">
+        <p>Todos nuestros huespedes son recibidos con un cóctel de bienvenida</p>
+      </div>
+      <div class="card">
+        <h2>Traslados al aeropuerto</h2>
+        <img src="./img/traslados.jpg" alt="Playa de la tejita" class="img">
+        <p>Contamos con un servicio gratuito de traslados al aereopuerto desde el hotel.</p>
+      </div>
+      <div class="card">
+        <h2>Desayuno incluido</h2>
+        <img src="./img/buffet.jpg" alt="Playa de la tejita" class="img">
+        <p>Todas las habitaciones tiene un desayuno tipo buffet incluido</p>
+      </div>
+      <div class="card">
+        <h3>Reserva</h3>
+        <form action="" method="post" id="form-registrar">
+          <label for="datemin">Entrada:</label>
+          <input type="date" id="entrada" name="entrada" min="fecha()"> <br>
+          <label for="datemax">Salida:&nbsp;&nbsp;&nbsp;</label>
+          <input type="date" id="salida" name="salida"> <br>
+          <input type="submit" value="Registrar" id="btn-registrar">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a href="#"><i class="fa fa-twitter"></i> </a>
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+    <a href="#"><i class="fa fa-youtube"></i> </a>
+  </div>
+
+</body>
+
+</html>
