@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces con estilo</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }   
+        .container{
+            margin: 1rem;
+            padding: 1rem;
+        }
+        .btn{
+            color:orangered;
+            text-decoration: none;
+            background-color: lightblue;
+            padding: 0.5rem;
+        }
+        a.btn:link{
+            color:orangered;
+        }
+        a.btn:visited{
+            color:green;
+        }
+        a.btn:hover{
+            color:orangered;
+            background-color: lightskyblue;
+            font-size: 120%;
+        }
+        a.btn:active{
+            color:black;
+        }
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:hover{
+            color: green;
+        }
+        a:active{
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, iure. Fugiat atque eaque obcaecati perspiciatis reprehenderit porro tenetur corrupti ex, <a href="#">Enlace </a> sunt molestias ipsa quo distinctio fugit voluptates sit incidunt suscipit.</p>
+        <div class="container">
+            <a href="#" class="btn">Inicio</a>
+            <a href="#" class="btn">Fin</a>
+        </div>
+         
+    </main>
+</body>
+</html>

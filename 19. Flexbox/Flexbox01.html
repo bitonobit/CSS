@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <style>
+
+    .flex-container {
+      display: flex;
+      background-color: lightblue;
+      flex-direction: row; /*row-revwese, column, column-reverse*/
+      flex-wrap: nowrap; /*Elementos flexibles no se ajustarán (este es el valor predeterminado), wrap, wrap-reverse,*/
+      flex-flow: row wrap ;/* Propiedad abreviada de flex-direction y flex-warp */
+      justify-content: center; /*flex-start, flex-end, space-around, space-between,space-evenly*/
+      align-items: center; /*center, flex-start, flex-end, stretch, baseline, normal*/
+      flex-grow: 1;
+      flex-shrink: 0;
+      flex-basis: 200px;
+
+    }
+
+    .flex-container>div {
+      background-color: lightsalmon;
+      margin: 10px;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    /* Responsive layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="div">1</div>
+    <div class="div">2</div>
+    <div class="div">3</div>
+    <div class="div">4</div>
+  </div>
+</body>
+
+</html>

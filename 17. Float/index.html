@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedad float</title>
+    <style>
+        .container {
+            background-color: bisque;
+            width: 500px;
+            height: 500px;
+        }
+        .caja1 {
+            background-color: lightgreen;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .caja2 {
+            background-color: lightsalmon;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+        .caja3 {
+            background-color: lightcoral;
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+        .caja4 {
+            background-color: lightblue;
+            width: 200px;
+            height: 200px;
+            float: right;
+        }
+        img {
+            width: 200px;
+            float: left;
+            padding: 5px;
+        }
+        .limpiar-float{
+            clear: both;
+        }
+        .foto{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+            /* overflow: auto; */
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caja1">1</div>
+        <div class="caja2">2</div>
+        <div class="caja3">3</div>
+        <div class="caja4">4</div>
+    </div>
+    <div class="container">
+        <div class="clearfix foto">
+
+            <img src="img/sofa.jpeg" alt="Sofa de lectura">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum molestias dolorem voluptatum repellendus quia, saepe veniam, adipisci animi ducimus numquam natus aliquam officiis, illum neque nesciunt. Inventore labore assumenda harum.</p>
+        </div>
+        <p class="limpiar-float">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dolores ab pariatur assumenda similique rem, dolorum autem repellendus impedit numquam eum saepe? Quas ipsa repellendus eos nemo! Beatae, inventore totam.</p>
+    </div>
+</body>
+
+</html>

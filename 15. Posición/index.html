@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición</title>
+    <style>
+        /*Se utiliza para controlar el método de posicionamiento de un elemento en un documento. Hay cinco valores de posición: static, relative, fixed, absolute, sticky. Los elementos HTML se colocan estáticos de forma predeterminada.
+        */
+        div{
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            border: 1px gray solid;
+        }
+        .estatico{
+            position: static;
+        }
+        .relativo{
+            position: relative;
+            top: 50px;
+            left: 50px;
+            background-color: lightgreen;
+        }
+        .fijo{
+            position: fixed;
+            background-color: lightcoral; 
+            top: 200px;
+            left: 300px;
+        }
+        .absoluto{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: lightsalmon;
+            width: 20px;
+            height: 20px;
+            /* ancestro más cercano que tenga una posición distinta a static */
+        }
+        .pegajoso{
+            position: sticky;
+            background-color: lightpink;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="estatico"></div>
+    <div class="relativo">
+        <div class="absoluto"></div>
+    </div>
+    <div class="fijo"></div>
+    <div class="pegajoso"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore in ipsum, dignissimos labore amet est nesciunt dolore voluptate provident voluptatem perspiciatis corrupti pariatur delectus sunt, praesentium expedita earum quaerat.</p>
+    <p>Nemo repellendus consequuntur placeat aliquid veritatis accusantium iure distinctio sed aspernatur sunt adipisci, esse id ratione atque sapiente quisquam cupiditate dolore harum, nam provident! Porro aliquam minima facilis rem corporis.</p>
+    <p>Autem iste voluptates libero laborum voluptatum. Mollitia, accusantium possimus maxime officiis accusamus laudantium officia autem illo quisquam assumenda quam vel quaerat ratione praesentium voluptate alias exercitationem sunt odio voluptates magni?</p>
+    <p>Doloremque, culpa. Voluptas tenetur ut, iure culpa consequuntur sed itaque dicta accusantium rem eveniet quibusdam tempora eius exercitationem commodi impedit explicabo error cumque dolorum quae autem provident? Architecto, nobis veniam!</p>
+    <p>Quidem quia doloribus accusantium temporibus, non, voluptatibus quae, impedit dolore nisi quis consectetur. Hic explicabo possimus optio, provident illo velit autem, commodi reiciendis saepe beatae porro ullam necessitatibus obcaecati. Error.</p>
+    <p>Accusantium voluptatem nesciunt consectetur porro, labore mollitia modi facere quo nisi aspernatur, tenetur similique impedit tempora, molestiae unde. Ipsam, commodi nesciunt perspiciatis deleniti at animi vitae cumque dicta quam expedita.</p>
+    <p>Sunt, possimus harum necessitatibus tenetur sequi id perspiciatis tempora dignissimos? Ipsa, dolorem illum. Quod adipisci reprehenderit quam quia blanditiis ad, natus eaque, culpa, veniam suscipit ipsa architecto eligendi reiciendis incidunt.</p>
+    <p>Eligendi dignissimos sit sed dolore fugit aut impedit ut odit. Ea pariatur necessitatibus, eveniet labore voluptates repellendus, maxime similique quo, numquam reiciendis suscipit mollitia dolor dolorum deleniti? Omnis, voluptatibus repellendus.</p>
+    <p>Culpa quidem quo dolore vitae doloremque earum eos dolorem consequatur excepturi necessitatibus minus quam consequuntur magni repellat iure aut distinctio, nihil error est atque unde officia labore? Illo, suscipit maiores.</p>
+    <p>Libero ea eligendi molestias maiores doloribus, facere doloremque omnis voluptate veniam quia accusantium tenetur quibusdam amet nihil, ab consequuntur, nesciunt commodi? Excepturi quos vitae tenetur? Eum libero tenetur praesentium architecto?</p>
+</body>
+</html>

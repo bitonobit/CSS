@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas HTML con CSS</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    table{
+      width: 70%;
+      margin: auto;
+    }
+    table,th,td{
+      border-bottom: 1px lightgray solid;
+      border-collapse: collapse;
+      line-height: 2.5rem;
+    }
+    th{
+      height: 2rem;
+      background-color: lightblue;
+      text-align: left;
+    }
+    tr:nth-child(even){
+      background-color: lightcyan;
+    }
+    tr:hover{
+      background-color: lightgoldenrodyellow;
+    }
+    .center{
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <th>Apellidos</th>
+      <th>Nombre</th>
+      <th>E1</th>
+      <th>E2</th>
+      <th>E3</th>
+      <th class="center">Definitiva</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>González González</td>
+        <td>Candy</td>
+        <td>5</td>
+        <td>5</td>
+        <td>8</td>
+        <td class="center">6</td>
+      </tr>
+      <tr>
+        <td>Rodríguez Hernández</td>
+        <td>Andrea</td>
+        <td>5</td>
+        <td>5</td>
+        <td>8</td>
+        <td class="center">6</td>
+      </tr>
+      <tr>
+        <td>Brito Pérez</td>
+        <td>Carlos</td>
+        <td>5</td>
+        <td>5</td>
+        <td>8</td>
+        <td class="center">6</td>
+      </tr>
+      <tr>
+        <td>González Pérez</td>
+        <td>Marcos</td>
+        <td>5</td>
+        <td>5</td>
+        <td>8</td>
+        <td class="center">6</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

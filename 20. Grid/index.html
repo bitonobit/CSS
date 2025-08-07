@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-template-columns: 80px 200px auto 40px; */
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 80px 200px;/*define la altura de cada fila*/
+  background-color: lightblue; 
+  padding: 10px;
+  /* row-gap: 50px;
+  column-gap: 50px; */
+  /* gap: 50px; */
+  gap: 20px 10px;
+  justify-content: space-evenly;
+  height: 500px;
+   align-content: center;
+   /* La place-contentpropiedad es una forma abreviada de propiedad para las align-contenty las justify-contentpropiedades */
+   place-content: end center;
+}
+.container > div {
+  background-color: lightpink;
+  border: 1px solid gray;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.div1 {
+  /* Hacer que "item1" comience en la fila 2, columna 1, y abarque 2 filas y 3 columnas */
+  /* grid-area: 2 / span 2 / span 3; */
+}
+</style>
+</head>
+
+<body>
+  <!-- Contenedor -->
+  <div class="container">
+    <div class="div1">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</body>
+
+</html>
