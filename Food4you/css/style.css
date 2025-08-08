@@ -1,0 +1,346 @@
+/* Resetear css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Rejilla de 12 columnas*/
+
+/* contenedor que flota */
+.col{ float:left; }
+/* contenedores que dividen la pantalla en 12 columnas usando el ancho */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Selector de atributos */
+[class*="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+/* Limpiamos el float */
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/**************** Fin de la rejilla ********************/
+
+/* CSS de la página */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif; 
+    color: #333;
+    font-size: 16px;
+  }
+
+/* Clases generales */
+.text-izq{
+    text-align:left;
+}
+.text-der{
+    text-align:right;
+}
+.text-centro{
+    text-align:center;
+}
+.centrar{
+    display: flex;
+    align-items: center;
+}
+.fredericka{
+    font-family: 'Fredericka the Great', cursive;
+}
+.Bonheur{
+    font-family: 'Bonheur Royale', cursive;
+}
+
+/* Primera sección d la página */
+#sec-1{
+    /* height: calc(100vh - (var(--navbar) + var(--footer))); */
+    min-height:calc((86.7vw / 16)*9);
+    background-image: url(../img/fondo-amarillo-verde.png);
+    background-size: cover ;
+}
+#sec-2{
+   padding: 5vh;
+   font-size: 2.2vh;
+   text-align: center;
+   line-height: 3vh;
+   position: relative;
+}
+
+#sec-3{
+    padding: 5vh;
+    font-size: 2.2vh;
+    text-align: center;
+    line-height: 3vh;
+ }
+
+ #sec-4{
+    padding: 15vh;
+    font-size: 2.2vh;
+    text-align: center;
+    line-height: 3vh;
+ }
+
+ #sec-5{
+    padding: 5vh;
+    font-size: 2.2vh;
+    text-align: center;
+    line-height: 3vh;
+ }
+
+ /* [id*="#sec-"] {
+    padding: 5vh;
+    font-size: 2.2vh;
+    text-align: center;
+    line-height: 3vh;
+ } */
+
+.header {
+    padding: 0.5rem;
+    color: #333; 
+    line-height: 0.2rem;
+}
+
+.logo{
+    width: 10vh;
+    display: block;
+    margin: auto;
+}
+
+.h1{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.h3{
+    font-family: 1rem;
+    padding-right: 1rem;
+    font-weight: bolder;
+}
+.h4{
+    font-size: 0.65rem;
+    padding: 1rem;
+}
+.menu{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 6vh;
+}
+.menu > a{
+    text-decoration: none;
+    color: #333;
+    padding: 0 5.5vh;
+}
+
+#pide{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 10vh;
+    font-weight:700;
+    line-height: 15vh;
+}
+
+#no-esperes{
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
+    font-size: 10vh;
+    line-height: 15vh;
+}
+
+#ordena{
+    font-size: 3vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 10vh;
+}
+#oferta{
+    font-size: 5.5vh;
+}
+#separador{
+    border-color: #cab30564;
+    width: 55vh;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.boton{
+    background-color: #fee201;
+    font-size: 2vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 1px solid black;
+    padding: 1vh 3vh;
+    margin-left: 33vh;
+    margin-top: 3vh;
+}
+
+.plato{
+    padding: 0;
+    margin: auto;
+    max-width: 100%;
+}
+
+.h2{
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
+    font-size: 6vh;
+    line-height: 15vh;
+}
+.btn-1{
+    margin-top: 2vh;
+    background-color: #fee201;
+    border: none;
+    padding: 1vh 3vh;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#franja{
+    position: absolute;
+    z-index: -1;
+    padding: 10vh;
+    width: 95%;
+    margin-top: 14vh;
+    background-color: #d7c01280;
+}
+
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+
+.sub-titulo{
+    top: 10vh;
+    left: 5vh;
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+}
+.titulo{
+    top: 20vh;
+    left: 5vh;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    line-height: 7vh;
+    text-align: left;
+}
+.sub-titulo2{
+    top: 5vh;
+    left: 5vh;
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+}
+.titulo2{
+    top: 10vh;
+    left: 5vh;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    line-height: 7vh;
+    text-align: left;
+}
+
+.sub-titulo3{
+    top: 35vh;
+    left: 5vh;
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+}
+.titulo3{
+    top: 40vh;
+    left: 5vh;
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 800;
+    line-height: 7vh;
+    text-align: left;
+}
+input{
+    width: 100%;
+    margin: 3%;
+    padding: 4%;
+    border: #626161 1px solid;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #626161;
+}
+
+.footer{
+    padding: 2vh;
+    background-color: rgba(0, 0, 0, 0.744);
+    color: white;
+    font-size: 2.2vh;
+    line-height: 3vh;
+}
+.redes{
+    font-size: 4vh;
+    letter-spacing: 1vh;
+    margin-left: 50%;
+}
+
+.carousel{
+    opacity: 0.5;
+}
+
+
+/* Diseño responsivo */
+@media only screen and (max-width : 600px) {
+    [class*="col-"] {
+        width: 100%;
+        padding: 1rem;
+    }
+    .logo{
+        width: 30vh;
+        display: block;
+        margin: auto;
+    }
+    .h1{
+        padding-top: 0;
+        text-align: center;
+    }
+    .movil{
+       display: none;
+    }
+    .menu{
+        display: block;
+        text-align: center;
+        padding-bottom: 6vh;
+    }
+    .menu > a{
+        text-decoration: none;
+        color: #333;
+    }
+    .redes{
+        margin-left: 25%;
+    }
+    #oferta{
+         margin-left: 70%;
+         margin-top: 0;
+         padding-top: 0;
+    }
+    .boton{
+        display: block;
+        margin: auto;
+    }
+    #franja{
+        display: none;
+    }
+}
+

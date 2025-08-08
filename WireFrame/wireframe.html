@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe</title>
+    <!-- Load icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      header {
+        background-color: #f1f1f1;
+        padding: 2rem;
+        /* text-align: center; */
+      }
+      nav {
+        overflow: hidden;
+        background-color: #333;
+      }
+      nav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+      }
+
+      /* Cambia el color de los enlaces visitados */
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .logo {
+        max-width: 100%;
+      }
+      /* Create three unequal columns that floats next to each other */
+      .col {
+        float: left;
+        padding: 1rem;
+      }
+
+      /* Left and right col */
+      .col.side {
+        width: 25%;
+        margin-top: 0px;
+        /* border: #262525 solid 1px; */
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      /* Middle col */
+      .col.middle {
+        width: 50%;
+      }
+      .col.left {
+        width: 100%;
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      section {
+        border: #262525 solid 1px;
+        width: 70%;
+        float: left;
+        /* margin-right: 1rem;
+        margin-left: 1rem; */
+        margin: 1rem;
+      }
+
+      aside {
+        border: #262525 solid 1px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 1rem;
+      }
+      .centrado {
+        text-align: center;
+      }
+      .izquierda {
+        text-align: left;
+      }
+
+      .header {
+        background-color: #262525;
+        color: rgb(253, 249, 249);
+        padding: 0px;
+        text-align: left;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .buscar {
+        padding: 0.5rem;
+        float: right;
+      }
+
+      @media screen and (max-width: 600px) {
+        .col.side,
+        .col.middle,
+        .col.left {
+          width: 100%;
+        }
+
+        section {
+          border: #262525 solid 1px;
+          width: 90%;
+          float: left;
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="col side">
+          <img
+            src="https://dummyimage.com/100x100/b1baba/ffffff"
+            alt="descripción"
+          />
+        </div>
+        <div class="col middle">
+          <h1 class="izquierda">Company Name</h1>
+          <p class="izquierda">Description</p>
+        </div>
+        <div class="col side"></div>
+      </div>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Download</a>
+      <a href="#">Buy now</a>
+      <a href="#">Soport</a>
+      <a href="#">About</a>
+      <form class="buscar" action="action_page.php">
+        <input type="text" placeholder="Search.." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </nav>
+    <div id="imagen_principal">
+      <img
+        src="https://dummyimage.com/1300x400/b1baba/ffffff"
+        alt="descripción"
+      />
+    </div>
+
+    <section>
+      <article>
+        <div class="row">
+          <div class="col left">
+            <header class="header"><h2>Top Story Headline</h2></header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col side">
+            <img
+              src="https://dummyimage.com/200x200/b1baba/ffffff"
+              alt="descripción"
+            />
+          </div>
+          <div class="col middle">
+            <h2>Main Content</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              sit amet pretium urna. Vivamus venenatis velit nec neque
+              ultricies, eget elementum magna tristique. Quisque vehicula, risus
+              eget aliquam.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+              sit amet pretium urna. Vivamus venenatis velit nec neque
+              ultricies, eget elementum magna tristique. Quisque vehicula, risus
+              eget aliquam.
+            </p>
+            <footer>
+              <button>Download</button>
+              <button>Puchcarse</button>
+            </footer>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="row">
+          <div class="col left">
+            <header class="header"><h2>A monthly newsletter ...</h2></header>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col left">
+            <div class="col">
+              <img
+                src="https://dummyimage.com/170x170/b1baba/ffffff"
+                alt="descripción"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://dummyimage.com/170x170/b1baba/ffffff"
+                alt="descripción"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://dummyimage.com/170x170/b1baba/ffffff"
+                alt="descripción"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://dummyimage.com/170x170/b1baba/ffffff"
+                alt="descripción"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <div class="row">
+      <div class="col side">
+        <aside>
+          <header class="header"><h3>Social</h3></header>
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/QC9_8nRNNHA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+          <button>Share & Links</button>
+        </aside>
+      </div>
+      <div class="col side">
+        <aside>
+          <header class="header"><h3>Navigate</h3></header>
+          <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <footer class="centrado">
+        <a href="">Home</a>
+        <a href="">Products</a>
+        <a href="">Privacy</a>
+        <a href="">Term</a>
+        <a href="">Map</a>
+        <a href="">Links</a>
+
+        <p class="centrado">Copyrigth ...</p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Sintaxis:
+              background-image: linear-gradient(direction, color-stop1, color-stop2, ...); 
+              background: radial-gradient(shape size at position, start-color, ..., last-color);
+              background: repeating-linear-gradient(angle | to side-or-corner, color-stop1, color-stop2, ...);
+    */
+    #div01 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #FFF6B7 10%, #F6416C 100%);
+    }
+
+    #div02 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #F97794 10%, #623AA2 100%);
+    }
+
+    #div03 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+    }
+
+    #div04 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #FCCF31 10%, #F55555 100%);
+    }
+
+    #div05 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #92FFC0 10%, #002661 100%);
+    }
+
+    #div06 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);
+    }
+
+    #div07 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      /* background: radial-gradient(shape size at position, start-color, ..., last-color); */
+      /* background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+      background: radial-gradient(circle, rgba(142,241,227,1) 0%, rgba(42,150,135,1) 66%, rgba(34,118,126,1) 100%);
+
+    }
+    
+    #div08 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+
+    }
+    
+    #div09 {
+      width: 250px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+
+    }
+    
+
+    #div10 {
+      width: 775px;
+      height: 250px;
+      margin: 5px;
+      display: inline-block;
+      background: #00B4DB;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #0083B0, #00B4DB);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    /* Varios ejemplos:
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(178,232,250,1) 0%, rgba(44,163,243,1) 90% );
+        background-image: radial-gradient( circle 712px at 2.5% 16.7%,  rgba(117,205,217,1) 0%, rgba(1,111,126,1) 90.1% );
+        background-image: radial-gradient( circle 465px at -15.1% -25%,  rgba(17,130,193,1) 0%, rgba(67,166,238,1) 49%, rgba(126,203,244,1) 90.2% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+        background-image: radial-gradient( circle 999px at 0% 0.5%,  rgba(252,175,23,1) 0%, rgba(255,239,108,1) 50.7%, rgba(178,210,53,1) 100.2% );
+        background-image: radial-gradient( circle 602px at 2.1% 5.1%,  rgba(233,0,120,1) 0%, rgba(0,0,0,1) 90.1% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,195,229,1) 0%, rgba(5,71,105,1) 90% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+        background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+        background-image: linear-gradient( 171.8deg,  rgba(5,111,146,1) 13.5%, rgba(6,57,84,1) 78.6% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(69,86,102,1) 0%, rgba(34,34,34,1) 90% );
+        background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(161,255,206,1) 0%, rgba(250,255,209,1) 90% );
+        
+        
+        background-image: linear-gradient( 110.2deg,  rgba(54,197,240,1) 8.2%, rgba(74,21,75,1) 92.4% );
+        background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+        background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+        background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
+        background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
+        background-image: linear-gradient( 110.2deg,  rgba(54,197,240,1) 8.2%, rgba(74,21,75,1) 92.4% );
+        background-image: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+        background-image: linear-gradient( 132.6deg,  rgba(71,139,214,1) 23.3%, rgba(37,216,211,1) 84.7% );
+        background-image: linear-gradient( 99deg,  rgba(115,18,81,1) 10.6%, rgba(28,28,28,1) 118% );
+        background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+        background-image: linear-gradient( 110.3deg,  rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+        background-image: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+
+
+
+    */
+  </style>
+</head>
+
+<body>
+  <div id="div01">
+  </div>
+  <div id="div02">
+  </div>
+  <div id="div03">
+  </div>
+  <div id="div04">
+  </div>
+  <div id="div05">
+  </div>
+  <div id="div06">
+  </div>
+  <div id="div07">
+  </div>
+  <div id="div08">
+  </div>
+  <div id="div09">
+  </div>
+  <div id="div10">
+  </div>
+
+  <script>
+
+  </script>
+</body>
+
+</html>
