@@ -1,0 +1,84 @@
+/* Paleta de colores */
+:root {
+  --dark-grey: #333;
+  --white: #fff;
+  --light-beis: #f9f2ec;
+}
+
+/* Estilos generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+}
+
+.header {
+  background-color: var(--light-beis);
+}
+
+#logo {
+  width: 150px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#lucia-image {
+  margin: auto;
+  display: block;
+  padding: 2vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* define el número de columnas*/
+  grid-template-rows: auto auto auto;
+  /* define la altura de cada fila */
+  gap: 5px;
+  place-content: center center;
+}
+
+.container {
+  padding-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container>img{
+  width: 50vh;
+}
+.main {
+  background-color: var(--light-beis);
+}
+.lista-dl{
+  text-align: left;
+  font-size: 1rem;
+}
+.lista-dl>dd{ 
+  padding-left: 1rem;
+}
+.para-llevar {
+  padding: 5vh;
+}
+
+.para-llevar ul {
+  margin: 0.5rem 2rem;
+}
+
+.footer {
+  background-color: var(--light-beis);
+  height: 10vh;
+}
