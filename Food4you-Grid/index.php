@@ -140,16 +140,16 @@
                     Reserva tu mesa
                 </p>
                 <div class="flex-container">
-                    <form action="" method="post" class="form">
+                    <form action="reserva.php" method="post" class="form">
                         <div class="col">
-                            <input type="text" placeholder="Nombre">
-                            <input type="date" placeholder="Fecha">
-                            <input type="number" placeholder="Nº de personas">
+                            <input type="text" placeholder="Nombre" name="nombre" required>
+                            <input type="date" placeholder="Fecha" name="fecha" required>
+                            <input type="number" placeholder="Nº de personas" name="comensales" min="1" max="20" required>
                         </div>
                         <div class="col">
-                            <input type="email" placeholder="Email">
-                            <input type="date" placeholder="Hora">
-                            <input type="submit" value="Reserva" class="btn-ordena btn-reserva">
+                            <input type="email" placeholder="Email" name="email" >
+                            <input type="time" placeholder="12:00" min="12:00" max="23:00" name="hora" >
+                            <input type="submit" value="Reserva" class="btn-ordena btn-reserva" name="reservar">
                         </div>
                     </form>
                 </div>
